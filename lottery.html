@@ -3,74 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="The DASBF weekly lottery — how it works, how to get involved, and where to see the latest results." />
+  <meta name="description" content="The DASBF quarterly lottery — how it works, prizes, and where to see results." />
   <title>Lottery — DASBF Devon Ambulance Staff Benevolent Fund</title>
   <link rel="stylesheet" href="css/styles.css" />
-  <style>
-    .prize-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 15px;
-    }
-    .prize-table th {
-      text-align: left;
-      padding: 12px 16px;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--amber);
-      background: var(--navy-deep);
-      border-bottom: 1px solid var(--border-amber);
-    }
-    .prize-table td {
-      padding: 14px 16px;
-      border-bottom: 1px solid var(--border-subtle);
-      color: var(--text-muted);
-    }
-    .prize-table td:first-child { color: var(--white); font-weight: 600; }
-    .prize-table tr:last-child td { border-bottom: none; }
-    .prize-table tr:hover td { background: var(--navy-mid); }
-
-    .step-list {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    .step {
-      display: flex;
-      gap: 18px;
-      align-items: flex-start;
-    }
-    .step-num {
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      background: var(--amber);
-      color: var(--navy-deep);
-      font-weight: 800;
-      font-size: 16px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-    .step-text h3 {
-      font-size: 16px;
-      font-weight: 700;
-      color: var(--white);
-      margin-bottom: 4px;
-    }
-    .step-text p {
-      font-size: 14px;
-      color: var(--text-muted);
-      line-height: 1.6;
-    }
-  </style>
 </head>
 <body>
 
-  <!-- ======= NAVIGATION ======= -->
   <nav class="site-nav" role="navigation" aria-label="Main navigation">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">DASBF <span>Devon</span></a>
@@ -78,7 +16,7 @@
         <span></span><span></span><span></span>
       </button>
     </div>
-    <div class="nav-menu" role="menu">
+    <div class="nav-menu">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="lottery.html" class="active">Lottery</a>
@@ -86,93 +24,98 @@
     </div>
   </nav>
 
-  <!-- ======= PAGE HERO ======= -->
-  <section class="page-hero" aria-labelledby="lottery-title">
-    <div class="container">
-      <p class="section-label">Weekly Lottery</p>
-      <h1 id="lottery-title">Play the DASBF Lottery</h1>
-      <p>Just £1 a week — weekly cash prizes, and every ticket supports Devon's ambulance staff.</p>
+  <!-- HERO -->
+  <section style="position:relative; min-height:240px; display:flex; align-items:flex-end; overflow:hidden; background:var(--navy);">
+    <!-- REPLACE: A photo from Joe for the lottery page -->
+    <div style="position:absolute; inset:0; background-image:url('images/lottery-hero.jpg'); background-size:cover; background-position:center; opacity:0.3;"></div>
+    <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(6,17,31,0.97) 0%, rgba(6,17,31,0.4) 100%);"></div>
+    <div class="container" style="position:relative; z-index:2; padding-top:48px; padding-bottom:44px;">
+      <p class="section-label">Quarterly Lottery</p>
+      <h1 style="font-size:clamp(26px,6vw,44px); font-weight:800; color:var(--white); margin-bottom:12px;">Play the DASBF Lottery</h1>
+      <p style="font-size:clamp(14px,3vw,17px); color:var(--text-muted); max-width:560px;">Just £2/month extra — four draws a year with cash prizes, and every ticket supports Devon's ambulance staff.</p>
     </div>
   </section>
 
-  <!-- ======= RESULTS ======= -->
-  <section class="section" aria-labelledby="results-heading">
+  <!-- DRAW DATES STRIP -->
+  <div style="background:var(--amber); padding:14px 20px;">
+    <div style="max-width:1100px; margin:0 auto; display:grid; grid-template-columns:repeat(4,1fr); text-align:center; gap:0;">
+      <div style="border-right:1px solid rgba(11,31,58,0.2); padding:4px 8px;">
+        <span style="display:block; font-weight:800; font-size:clamp(14px,3vw,18px); color:var(--navy-deep);">February</span>
+        <span style="display:block; font-size:11px; color:rgba(11,31,58,0.65); font-weight:600;">1st draw</span>
+      </div>
+      <div style="border-right:1px solid rgba(11,31,58,0.2); padding:4px 8px;">
+        <span style="display:block; font-weight:800; font-size:clamp(14px,3vw,18px); color:var(--navy-deep);">May</span>
+        <span style="display:block; font-size:11px; color:rgba(11,31,58,0.65); font-weight:600;">2nd draw</span>
+      </div>
+      <div style="border-right:1px solid rgba(11,31,58,0.2); padding:4px 8px;">
+        <span style="display:block; font-weight:800; font-size:clamp(14px,3vw,18px); color:var(--navy-deep);">August</span>
+        <span style="display:block; font-size:11px; color:rgba(11,31,58,0.65); font-weight:600;">3rd draw</span>
+      </div>
+      <div style="padding:4px 8px;">
+        <span style="display:block; font-weight:800; font-size:clamp(14px,3vw,18px); color:var(--navy-deep);">November</span>
+        <span style="display:block; font-size:11px; color:rgba(11,31,58,0.65); font-weight:600;">4th draw</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESULTS -->
+  <section class="section">
     <div class="container">
       <p class="section-label">Latest Draw</p>
-      <h2 class="section-title" id="results-heading">This Week's Results</h2>
+      <h2 class="section-title">Results</h2>
       <div class="section-divider"></div>
 
-      <div class="card" style="max-width: 560px; margin-bottom: 32px;">
+      <div class="card" style="max-width: 480px; margin-bottom: 24px;">
         <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px; margin-bottom:16px;">
-          <h3 style="margin:0;">Weekly Draw Numbers</h3>
-          <span style="font-size:11px; background:var(--amber-pale); border:1px solid var(--border-amber); color:var(--amber); padding:4px 12px; border-radius:12px; font-weight:700; letter-spacing:0.06em;">RESULTS ON FACEBOOK</span>
+          <h3 style="margin:0;">Latest Draw Results</h3>
+          <span style="font-size:11px; background:var(--amber-pale); border:1px solid var(--border-amber); color:var(--amber); padding:4px 12px; border-radius:12px; font-weight:700;">FACEBOOK</span>
         </div>
         <p style="color:var(--text-muted); font-size:14px; margin-bottom:20px;">
-          Results are drawn and published weekly on the DASBF Facebook page. Follow the page to get notified each week.
+          Results are drawn quarterly and posted on the DASBF Facebook page. Follow the page to be notified after each draw.
         </p>
-        <!--
-          NOTE: If you ever want to hard-code the latest numbers here,
-          replace the text below with the actual numbers using .ball divs.
-          Example structure shown — edit numbers each week or leave as-is
-          and direct people to Facebook.
-        -->
-        <p style="font-size:13px; color:var(--text-dim); margin-bottom:20px; font-style:italic;">
-          Numbers below are examples only — see Facebook for the real weekly results.
-        </p>
-        <div class="lottery-balls" aria-label="Example lottery numbers">
-          <div class="ball">07</div>
-          <div class="ball">14</div>
-          <div class="ball">22</div>
-          <div class="ball">31</div>
-          <div class="ball">45</div>
-        </div>
-        <br/>
-        <!--
-          REPLACE: Update this URL to the actual DASBF Facebook page.
-        -->
+        <!-- REPLACE: Update to the real DASBF Facebook page URL -->
         <a href="https://www.facebook.com/DASBF" target="_blank" rel="noopener" class="btn btn-amber btn-block">
           See Results on Facebook &rarr;
         </a>
       </div>
-
     </div>
   </section>
 
-  <!-- ======= HOW IT WORKS ======= -->
-  <section class="section" style="background: var(--navy-mid);" aria-labelledby="how-heading">
+  <!-- HOW IT WORKS -->
+  <section class="section" style="background: var(--navy-mid);">
     <div class="container">
       <p class="section-label">How It Works</p>
-      <h2 class="section-title" id="how-heading">Simple, weekly, and for a great cause</h2>
+      <h2 class="section-title">Simple, quarterly, and for a great cause</h2>
       <div class="section-divider"></div>
 
-      <div style="display: grid; gap: 48px; grid-template-columns: 1fr;">
+      <div style="display:grid; gap:48px; grid-template-columns:1fr;">
         <div class="step-list">
           <div class="step">
             <div class="step-num">1</div>
             <div class="step-text">
-              <h3>Sign up as a member</h3>
-              <p>Membership is required to enter the lottery. It's quick to sign up online — just head to the Join page.</p>
+              <h3>Join as a DASBF member</h3>
+              <p>Basic membership is £3/month. You must be a member to enter the lottery.</p>
             </div>
           </div>
           <div class="step">
             <div class="step-num">2</div>
             <div class="step-text">
-              <h3>Pay £1 per week</h3>
-              <p>Your lottery contribution of £1 per week (£52/year) is collected alongside your membership fee. You can enter multiple times to increase your chances.</p>
+              <h3>Add the lottery — £2/month</h3>
+              <p>Pay an additional £2/month (£24/year) on top of your membership subscription to enter every quarterly draw. You can enter multiple times to increase your chances.</p>
             </div>
           </div>
           <div class="step">
             <div class="step-num">3</div>
             <div class="step-text">
-              <h3>Watch the weekly draw</h3>
-              <p>Numbers are drawn each week and results posted on the DASBF Facebook page. Winners are contacted directly.</p>
+              <h3>Watch for the quarterly draw</h3>
+              <p>Draws take place in February, May, August, and November. Results are posted on the DASBF Facebook page after each draw.</p>
             </div>
           </div>
           <div class="step">
             <div class="step-num">4</div>
             <div class="step-text">
               <h3>Win cash prizes</h3>
-              <p>Multiple prizes are available each week. Even if you don't win, your ticket goes directly towards supporting your colleagues.</p>
+              <p>Winners are contacted directly by a committee member and can receive payment by cheque or bank transfer.</p>
             </div>
           </div>
         </div>
@@ -180,40 +123,22 @@
         <!-- Prize table -->
         <div>
           <h3 style="color:var(--white); font-size:18px; font-weight:700; margin-bottom:20px;">Prize Structure</h3>
-          <div style="background: var(--navy); border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-subtle);">
+          <div style="background:var(--navy); border-radius:var(--radius-lg); overflow:hidden; border:1px solid var(--border-subtle);">
             <table class="prize-table">
               <thead>
                 <tr>
                   <th>Place</th>
                   <th>Prize</th>
-                  <th>Drawn from</th>
+                  <th>Frequency</th>
                 </tr>
               </thead>
               <tbody>
                 <!--
                   REPLACE: Update these prize amounts to reflect the real DASBF prize structure.
-                  Add or remove rows as needed.
                 -->
-                <tr>
-                  <td>1st Prize</td>
-                  <td>Replace with amount</td>
-                  <td>Weekly draw</td>
-                </tr>
-                <tr>
-                  <td>2nd Prize</td>
-                  <td>Replace with amount</td>
-                  <td>Weekly draw</td>
-                </tr>
-                <tr>
-                  <td>3rd Prize</td>
-                  <td>Replace with amount</td>
-                  <td>Weekly draw</td>
-                </tr>
-                <tr>
-                  <td>Rollover / Bonus</td>
-                  <td>Replace with details</td>
-                  <td>When applicable</td>
-                </tr>
+                <tr><td>1st Prize</td><td>Replace with amount</td><td>Each quarterly draw</td></tr>
+                <tr><td>2nd Prize</td><td>Replace with amount</td><td>Each quarterly draw</td></tr>
+                <tr><td>3rd Prize</td><td>Replace with amount</td><td>Each quarterly draw</td></tr>
               </tbody>
             </table>
           </div>
@@ -223,53 +148,36 @@
     </div>
   </section>
 
-  <!-- ======= PHOTO SPLIT ======= -->
-  <section class="split" aria-label="Lottery in action">
-    <!--
-      REPLACE: A photo of the draw, team event, or ambulance crew works well.
-      Example: style="background-image: url('images/lottery-draw.jpg')"
-    -->
-    <div class="split-photo" style="background-image: url('images/lottery-draw.jpg');"></div>
+  <!-- PHOTO SPLIT -->
+  <section class="split">
+    <!-- REPLACE: A crew or event photo from Joe -->
+    <div class="split-photo" style="background-image: url('images/lottery-split.jpg');"></div>
     <div class="split-content">
       <p class="section-label">Why Play?</p>
-      <h2 class="section-title" style="font-size: clamp(20px, 4vw, 30px);">Every ticket makes a difference</h2>
+      <h2 class="section-title" style="font-size: clamp(20px,4vw,30px);">94.7% of members play the lottery</h2>
       <div class="section-divider"></div>
       <ul class="info-list">
-        <li>
-          <span class="check">&#10003;</span>
-          Weekly cash prizes for you and your colleagues
-        </li>
-        <li>
-          <span class="check">&#10003;</span>
-          Proceeds fund the benevolent grants that support staff in hardship
-        </li>
-        <li>
-          <span class="check">&#10003;</span>
-          Just £1 a week — less than a cup of coffee
-        </li>
-        <li>
-          <span class="check">&#10003;</span>
-          Enter as many times as you like to increase your chances
-        </li>
+        <li><span class="check">&#10003;</span> Quarterly cash prizes — four chances a year to win</li>
+        <li><span class="check">&#10003;</span> Proceeds fund the benevolent grants that support staff in hardship</li>
+        <li><span class="check">&#10003;</span> Just £2/month on top of your £3/month membership</li>
+        <li><span class="check">&#10003;</span> Buy multiple entries to increase your chances</li>
       </ul>
       <br />
       <a href="join.html" class="btn btn-amber">Join &amp; Enter the Lottery</a>
     </div>
   </section>
 
-  <!-- ======= CTA BANNER ======= -->
-  <section class="cta-banner" aria-label="Call to action">
+  <section class="cta-banner">
     <h2>Ready to get involved?</h2>
-    <p>Become a DASBF member and enter the weekly lottery in minutes.</p>
+    <p>Become a DASBF member and enter the quarterly lottery — just £5/month total.</p>
     <a href="join.html" class="btn btn-navy">Join Now &rarr;</a>
   </section>
 
-  <!-- ======= FOOTER ======= -->
-  <footer class="site-footer" role="contentinfo">
+  <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-brand">
         <h3>DASBF</h3>
-        <p>Devon Ambulance Staff Benevolent Fund — supporting our ambulance staff and their families since 1994.</p>
+        <p>Devon Ambulance Staff Benevolent Fund — supporting ambulance staff and their families since 1990.</p>
       </div>
       <div class="footer-col">
         <h4>Pages</h4>
@@ -279,9 +187,12 @@
         <a href="join.html">Join</a>
       </div>
       <div class="footer-col">
-        <h4>External</h4>
-        <a href="https://www.facebook.com/DASBF" target="_blank" rel="noopener">Facebook</a>
-        <a href="https://www.dast.nhs.uk" target="_blank" rel="noopener">Devon Ambulance Trust</a>
+        <h4>About Section</h4>
+        <a href="about-how-we-work.html">How We Work</a>
+        <a href="about-faq.html">FAQs</a>
+        <a href="about-downloads.html">Downloads</a>
+        <a href="about-committee.html">Committee</a>
+        <a href="contact.html">Contact</a>
       </div>
     </div>
     <div class="footer-bottom">
