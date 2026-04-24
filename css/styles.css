@@ -52,16 +52,19 @@ button { cursor: pointer; font-family: var(--font); }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 60px;
+  height: 104px;
   padding: 0 20px;
 }
 .nav-logo {
-  font-size: 17px;
-  font-weight: 700;
-  color: var(--amber);
-  letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
 }
-.nav-logo span { color: var(--white); font-weight: 400; opacity: 0.85; }
+.nav-logo-img {
+  height: 90px;
+  width: auto;
+  display: block;
+}
 
 .nav-toggle {
   display: flex;
