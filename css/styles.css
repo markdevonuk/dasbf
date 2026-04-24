@@ -52,7 +52,7 @@ button { cursor: pointer; font-family: var(--font); }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 104px;
+  height: 72px;
   padding: 0 20px;
 }
 .nav-logo {
@@ -61,7 +61,7 @@ button { cursor: pointer; font-family: var(--font); }
   flex-shrink: 0;
 }
 .nav-logo-img {
-  height: 90px;
+  height: 52px;
   width: auto;
   display: block;
 }
